@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dragon Dice Game</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jQuery3.7.js"></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Dragon Dice Game</h1>
+  </header>
+  
+  <main>
+    <section id="game-area">
+      <div id="player-info">
+        <h2>Player</h2>
+        <img id="player-dice1" src="images/dice-placeholder.png" alt="Player Dice 1">
+        <img id="player-dice2" src="images/dice-placeholder.png" alt="Player Dice 2">
+        <p>Round Score: <span id="player-round-score">0</span></p>
+        <p>Total Score: <span id="player-total-score">0</span></p>
+      </div>
+    
+      <div id="computer-info">
+        <h2>Computer</h2>
+        <img id="computer-dice1" src="images/dice-placeholder.png" alt="Computer Dice 1">
+        <img id="computer-dice2" src="images/dice-placeholder.png" alt="Computer Dice 2">
+        <p>Round Score: <span id="computer-round-score">0</span></p>
+        <p>Total Score: <span id="computer-total-score">0</span></p>
+      </div>
+    </section>
+
+    <div id="controls">
+      <button id="roll-dice">Roll Dice</button>
+      <button id="reset-game">Reset Game</button>
+    </div>
+
+    <section id="result">
+      <h2 id="winner-message"></h2>
+    </section>
+  </main>
+
+</body>
+</html>
