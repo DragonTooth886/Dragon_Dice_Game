@@ -120,4 +120,35 @@ button:disabled {
   background-color: #cccccc;
   color: #666666;
   cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  #game-area {
+    flex-direction: column;
+    align-items: center;
+  }
+  #game-area div {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+  button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    font-size: 1.2rem;
+  }
+  #result h2 {
+    font-size: 1rem;
+  }
+  button {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+  }
+  #game-area img {
+    width: 60px;
+    height: 60px;
+  }
 }/*# sourceMappingURL=styles.css.map */

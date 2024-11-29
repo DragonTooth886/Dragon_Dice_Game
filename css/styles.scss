@@ -126,3 +126,45 @@ button {
 #reset-game {
   @include button-style(#e74c3c, darken(#e74c3c, 10%));
 }
+
+// Responsive Design
+@media (max-width: 768px) {
+  // Stack game area
+  #game-area {
+    flex-direction: column;
+    align-items: center;
+
+    div {
+      width: 90%;
+      margin-bottom: 1rem;
+    }
+  }
+
+  // Adjust button sizes
+  button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  // Smaller font sizes for header and result
+  header {
+    font-size: 1.2rem;
+  }
+
+  #result h2 {
+    font-size: 1rem;
+  }
+
+  // Adjust button and dice sizes
+  button {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  #game-area img {
+    width: 60px;
+    height: 60px;
+  }
+}
