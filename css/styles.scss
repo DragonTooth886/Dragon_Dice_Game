@@ -64,7 +64,6 @@ main {
   }
 }
 
-
 #game-area img {
   width: 80px; 
   height: 80px; 
@@ -95,4 +94,35 @@ main {
 
 .rolling {
   animation: roll 0.5s ease-in-out;
+}
+
+// Mixin: Button Styles
+@mixin button-style($bg-color, $hover-color, $text-color: white) {
+  background-color: $bg-color;
+  color: $text-color;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+
+  &:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+  }
+}
+
+// Apply mixin to buttons
+button {
+  @include button-style($secondary-color, darken($secondary-color, 10%));
+}
+
+// Reset Game button with custom color
+#reset-game {
+  @include button-style(#e74c3c, darken(#e74c3c, 10%));
 }
